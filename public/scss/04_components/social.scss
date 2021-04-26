@@ -1,0 +1,27 @@
+//------------------------------------------------------------
+// = SOCIAL
+//------------------------------------------------------------
+.social{
+  display: flex;
+  flex-wrap: wrap;
+  li{
+    margin-right: 1rem;
+    a{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      font-size: 2.4rem;
+      text-decoration: none;
+      color: var(--color-paragraph);
+      background: var(--color-border);
+      border-radius: var(--radius);
+      &:hover{
+        color: var(--color-paragraph);
+        background: var(--color-primary);
+      }
+    }
+    i{}
+  }
+}

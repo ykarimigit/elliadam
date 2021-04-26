@@ -1,0 +1,41 @@
+//------------------------------------------------------------
+// = FOOTER
+//------------------------------------------------------------
+.footer{
+  position: relative;
+  margin-top: 3rem;
+  background: var(--color-white);
+  .social{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.link-catalog{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.address{
+  > * {
+    & + * {
+      margin-top: 1.5rem;
+    }
+  }
+  p{
+    font-size: var(--fs-text-xs);
+    color: var(--color-paragraph-light);
+  }
+  strong{
+    color: var(--color-paragraph);
+  }
+  a{
+    color: inherit;
+  }
+}
+
+.copyright{
+  text-align: center;
+  font-size: var(--fs-text-xxs);
+  img{max-width: 100%;}
+}

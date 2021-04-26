@@ -1,0 +1,33 @@
+//------------------------------------------------------------
+// = PRODUCT DETAIL SLIDER
+//------------------------------------------------------------
+.product-detail-slider{
+  .swiper-button-prev, .swiper-button-next{
+    color: var(--color-primary);
+    background: var(--color-bg-3);
+    padding: 1.5rem;
+    &:after{
+      font-size: 2.6rem;
+    }
+  }
+  .gallery-top{
+    .swiper-slide{
+      text-align: center;
+      img{
+        object-fit: scale-down;
+        max-height: 490px;
+      }
+    }
+  }
+  .gallery-thumbs{
+    .swiper-slide{
+      width: auto !important;
+      box-shadow: var(--box-shadow-1);
+      img{
+        width: 82px;
+        height: 82px;
+        object-fit: scale-down;
+      }
+    }
+  }
+}

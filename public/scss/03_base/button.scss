@@ -1,0 +1,156 @@
+//------------------------------------------------------------
+// = BUTTON
+//------------------------------------------------------------
+.button{
+  --button-padding-x: 1.5rem;
+  --button-padding-y: 2rem;
+  display: inline-block;
+  padding: var(--button-padding-x) var(--button-padding-y);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--fs-text-xs);
+  font-weight: var(--medium);
+  border: 0;
+  text-align: center;
+  border-radius: var(--radius);
+  &.button-vertical{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: var(--button-padding-y) var(--button-padding-x);
+    .button-wrapper{
+      > * {
+        & + *{
+          margin-left: 0;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+  &.button-block{
+    width: 100%;
+  }
+  &.button-sm{
+    padding: 5px 10px;
+    min-width: 100px;
+    font-size: 14px;
+  }
+  &.button-xs{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: auto;
+    width: 38px;
+    height: 38px;
+  }
+  i{
+    font-size: 2.2rem;
+  }
+}
+.button-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > * {
+    & + *{
+      margin-left: 1rem;
+    }
+  }
+}
+
+.button-1{
+  @extend .button;
+  background-color: var(--color-primary);
+  color: var(--color-paragraph);
+  &:hover, &:focus{
+    background-color: var(--color-paragraph);
+    color: var(--color-primary);
+  }
+}
+.button-2{
+  @extend .button;
+  background-color: var(--color-white);
+  color: var(--color-paragraph);
+  box-shadow: inset 0 0 0 1px var(--color-border);
+  &:hover, &:focus{
+    background-color: var(--color-white);
+    color: var(--color-paragraph);
+  }
+}
+.button-3{
+  @extend .button;
+  color: var(--color-white);
+  background-color: var(--color-paragraph);
+  border-color: var(--color-paragraph);
+  i{
+    font-size: 2.6rem;
+    line-height: 1;
+    transform: translateY(4px);
+  }
+
+  &:hover, &:focus {
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border-color: var(--color-black);
+  }
+}
+.button-4{
+  @extend .button;
+  background-color: var(--color-alert);
+  color: var(--color-white);
+  &:hover, &:focus{
+    background-color: var(--color-alert);
+    color: var(--color-white);
+  }
+}
+
+.button-whatsapp{
+  @extend .button;
+  background-color: #1BD741;
+  color: var(--color-white);
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index: 99;
+  transform: translateY(-50%);
+  border-radius: var(--radius) 0 0 var(--radius);
+  &:hover, &:focus{
+    background-color: #18c43b;
+    color: var(--color-white);
+  }
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.button-category{
+  @extend .button;
+  --button-padding-x: 1rem;
+  --button-padding-y: 1rem;
+  background-color: var(--color-primary);
+  color: var(--color-paragraph);
+  &:hover, &:focus{
+    background-color: var(--color-paragraph);
+    color: var(--color-primary);
+  }
+}
+
+.button-close{
+  @extend .button;
+  --button-padding-x: 1rem;
+  --button-padding-y: 1rem;
+  background-color: var(--color-alert);
+  color: var(--color-white);
+}
+
+.button-big-menu-trigger{
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.link-1{
+  color: var(--color-paragraph);
+  text-decoration: underline;
+  font-size: var(--fs-text-xs);
+}

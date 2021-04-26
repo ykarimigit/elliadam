@@ -1,0 +1,81 @@
+:root {
+  //------------------------------------------------------------
+  // = GENERAL
+  //------------------------------------------------------------
+  --font:       'Inter', sans-serif;
+  --bold:       700;
+  --medium:     500;
+  --regular:    400;
+
+  --fs-text-xxxs: 10px;
+  --fs-text-xxs: 12px;
+  --fs-text-xs: 14px;
+  --fs-text-sm: 16px;
+  --fs-text-md: 18px;
+  --fs-text-lg: 20px;
+  --fs-title-xs: 22px;
+  --fs-title-sm: 28px;
+  --fs-title-md: 32px;
+  --fs-title-lg: 38px;
+  --fs-title-xl: 48px;
+  --fs-title-xxl: 80px;
+
+  --transition: all .15s ease;
+  --radius:     4px;
+
+  --box-shadow-1: 0 6.7px 5.3px RGBA(0, 0, 0, 0.01), 0 22.3px 17.9px RGBA(0, 0, 0, 0.02), 0 100px 80px RGBA(0, 0, 0, 0.03);
+  --box-shadow-2: 0 8px 6px RGBA(0, 0, 0, 0.05), 0 24px 20px RGBA(0, 0, 0, 0.08), 0 110px 90px RGBA(0, 0, 0, 0.1);
+  --box-shadow-3: 0 0 15px RGBA(0, 0, 0, 0.05);
+
+
+  //------------------------------------------------------------
+  // = SIZE
+  //------------------------------------------------------------
+  --nav-height: 6rem;
+  --heading-margin: 3rem;
+  --category-nav-box: 320px;
+
+  --input-height:         46px;
+  --textarea-height:      120px;
+
+  //------------------------------------------------------------
+  // = COLOR
+  //------------------------------------------------------------
+  --color-bg:         #f6f6f6;
+  --color-bg-2:       #ffffff;
+  --color-bg-3:       #333333;
+  --color-bg-4:       #FBFBFB;
+  --color-border: #dbdbdb;
+
+  --color-primary:    #FED700;
+  --color-secondary:  #0072fe;
+
+  --color-paragraph:  #090b10;
+  --color-paragraph-light: #403d3d;
+
+  --color-highlight:  #FFE500;
+  --color-success:    #36B37E;
+  --color-alert:      #FF5630;
+
+  --color-white:      #FFFFFF;
+  --color-black:      #000000;
+
+  --color-gradient: linear-gradient(to right, #fed700 0%, #ffe65a 51%, #fed700 100%);
+
+
+  @include media-breakpoint-down(lg) {
+    --fs-text-xxxs: 10px;
+    --fs-text-xxs:  12px;
+    --fs-text-xs:   14px;
+    --fs-text-sm:   16px;
+    --fs-text-md:   18px;
+    --fs-text-lg:   20px;
+    --fs-title-xs:  20px;
+    --fs-title-sm:  24px;
+    --fs-title-md:  28px;
+    --fs-title-lg:  30px;
+    --fs-title-xl:  38px;
+    --fs-title-xxl: 60px;
+  }
+
+}

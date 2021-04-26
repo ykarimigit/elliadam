@@ -1,0 +1,79 @@
+//------------------------------------------------------------
+// = NEWSLETTER
+//------------------------------------------------------------
+.newsletter{
+  background: var(--color-bg-3);
+  .inner{
+    display: grid;
+    grid-template-areas: 'title title title input input';
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 3rem;
+    padding: 6rem 0;
+    @include media-breakpoint-down(md) {
+      grid-gap: 1rem;
+      grid-template-areas: 'title' 'input';
+      text-align: center;
+    }
+  }
+}
+.newsletter-title{
+  font-size: var(--fs-title-sm);
+  color: var(--color-white);
+  grid-area: title;
+}
+.newsletter-box{
+  grid-area: input;
+  --button: 16rem;
+  --box-padding: 1rem;
+  position: relative;
+  @include media-breakpoint-down(lg) {
+    --button: 12rem;
+    --box-padding: .5rem;
+  }
+  form{
+    display: flex;
+  }
+}
+.newsletter-box-input{
+  width: 100%;
+  font-size: var(--fs-text-sm);
+  padding: 2rem var(--button) 2rem 3rem;
+  color: var(--color-paragraph);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-2);
+  border-radius: calc(var(--radius) * 12);
+  &:hover, &:focus{
+    outline: none;
+    border-color: var(--color-primary);
+    & ~ .newsletter-box-button{
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+    }
+  }
+  &::placeholder{
+    color: var(--color-paragraph-light);
+  }
+}
+.newsletter-box-button{
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: var(--button);
+  border: none;
+  background: var(--color-primary);
+  font-size: var(--fs-title-xs);
+  border-top-right-radius: calc(var(--radius) * 12);
+  border-bottom-right-radius: calc(var(--radius) * 12);
+  &:hover, &:focus{
+    outline: none;
+
+  }
+}

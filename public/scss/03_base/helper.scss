@@ -1,0 +1,44 @@
+//------------------------------------------------------------
+// = HELPER
+//------------------------------------------------------------
+.visually-hidden{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+hr{
+  background: var(--color-border);
+  margin: 3rem 0;
+}
+
+.main{
+  > * {
+    & + * {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.bg-success{background: var(--color-success) !important;}
+.bg-warning{background: var(--color-highlight) !important;}
+.bg-alert{background: var(--color-alert) !important;}
+.bg-white{background: var(--color-white) !important;}
+.bg-black{background: var(--color-black) !important;}
+.bg-border{background: var(--color-border) !important;}
+
+.color-success{color: var(--color-success) !important;}
+.color-warning{color: var(--color-highlight) !important;}
+.color-alert{color: var(--color-alert) !important;}
+.color-white{color: var(--color-white) !important;}
+.color-black{color: var(--color-black) !important;}
+
+.text-right{text-align: right !important;}
+.text-left{text-align: left !important;}
+.text-center{text-align: center !important;}

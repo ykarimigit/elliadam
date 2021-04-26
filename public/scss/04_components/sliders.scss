@@ -1,0 +1,54 @@
+//------------------------------------------------------------
+// = HERO SLIDER
+//------------------------------------------------------------
+.hero-slider{
+  margin-top: calc(-1 * var(--heading-margin));
+  .swiper-container{
+    background: var(--color-primary);
+  }
+  .swiper-slide{
+    padding: 3rem 0;
+  }
+  .hero-meta{
+    padding: 3rem;
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
+    a{
+      text-decoration: none;
+    }
+    img{max-width: 100%;}
+    .title{
+      font-size: var(--fs-title-sm);
+      color: var(--color-paragraph);
+      font-weight: var(--bold);
+    }
+    .description{
+      font-size: var(--fs-text-md);
+      color: var(--color-paragraph);
+    }
+  }
+  .hero-figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+//------------------------------------------------------------
+// = GENERAL
+//------------------------------------------------------------
+.swiper-button-prev, .swiper-button-next{
+  color: var(--color-primary);
+  background: var(--color-bg-3);
+  padding: 1.5rem;
+  &:after{
+    font-size: 2.6rem;
+  }
+}
+.swiper-pagination-bullet-active{
+  background: var(--color-primary);
+}

@@ -1,0 +1,29 @@
+//------------------------------------------------------------
+// = TABLE
+//------------------------------------------------------------
+.table{
+  font-size: var(--fs-text-xs);
+  figure{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--box-shadow-3);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 5px;
+    background: var(--color-white);
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: scale-down;
+    }
+  }
+  td, th{
+    padding: 10px;
+    @include media-breakpoint-down(md){
+      white-space: nowrap;
+    }
+  }
+}

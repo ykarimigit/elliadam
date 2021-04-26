@@ -1,0 +1,39 @@
+//------------------------------------------------------------
+// = STEPS
+//------------------------------------------------------------
+.steps{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  max-width: 760px;
+  li{
+    margin: 1rem;
+    opacity: .5;
+    &.active{
+      opacity: 1;
+      .figure{
+        background: var(--color-primary);
+        color: var(--color-paragraph);
+      }
+    }
+  }
+  .figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+    border-radius: 50%;
+    background: var(--color-paragraph-light);
+    i{
+      font-size: 3rem;
+      color: var(--color-white)
+    }
+  }
+  .name{
+    font-size: var(--fs-text-sm);
+    color: var(--color-paragraph);
+  }
+}

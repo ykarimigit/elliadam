@@ -1,0 +1,33 @@
+//------------------------------------------------------------
+// = WYSIWYG
+//------------------------------------------------------------
+.wysiwyg{
+  font-size: var(--fs-text-sm);
+  > * {
+    & + * {
+      margin-top:  3rem;
+    }
+  }
+  ul, ol{
+    li{
+      & + li{
+        margin-top:  1.5rem;
+      }
+    }
+  }
+  h1, h2, h3, h4{font-size: var(--fs-title-sm);}
+  h5, h6{font-size: var(--fs-title-xs);}
+  h1, h2, h3, h4, h5, h6{
+    margin-top:  6rem;
+    margin-bottom: 0;
+    line-height: 120%;
+  }
+  a{
+    word-break: break-all;
+    &:not([class^="button-"]){
+      color: var(--color-paragraph);
+      background: var(--color-primary);
+      text-decoration: none;
+    }
+  }
+}

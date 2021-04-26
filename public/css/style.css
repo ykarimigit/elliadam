@@ -1,0 +1,92 @@
+
+#s1{font-size:25px; margin-left:20%; }
+#s2{
+    font-size:16px; margin-left:2%;
+}
+#s3{
+    margin-top: 16px;
+    font-size: 16px;
+}
+#email,#password{
+     font-size: 16px;
+     height: 40px;
+}
+#s5{
+    margin-top: 16px;
+    font-size: 16px;
+}
+#userpanel{
+    font-size: 14px;
+
+}
+
+#hos{
+      width: 50%;
+      font-size: 30px;
+    margin-left: 20%;
+    text-align: center;
+
+}
+#panelname{
+          font-family: "Malgun Gothic";
+}
+#userlink{
+        margin-top: 5%;
+}
+#userlink a{
+     font-size: 22px;
+     text-decoration: none;
+    color: #1a1e21;
+}
+#formuser label{
+     margin-left: 1%;
+    margin-right: 1%;
+}
+#userrow{
+     margin-top: 4%;
+}
+#userrow1{
+    margin-top: 4%;
+
+
+}
+#btn1{
+    margin-top: 4%;
+    font-size: 20px;
+
+
+}
+#table1{
+     margin-top: 5%;
+    width: 800px;
+    font-size: 12px;
+}
+#sess1{
+      margin-top: 10%;
+      width: 30%;
+    margin-left: 25%;
+    text-align: center;
+}
+#sw1{
+    font-weight: bolder;
+
+}
+#work{
+      font-size: 18px;
+}
+#sw2{
+    font-size: 12px;
+
+}
+#scategory{
+     color: #1a1e21;
+    font-size: 14px;
+}
+#reg{
+    font-size: 16px;
+}
+#reg1{
+    margin-top: 2%;
+
+ }
+
